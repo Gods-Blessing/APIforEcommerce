@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/apitesting");
+mongoose.connect(process.env.dburl);
+
 
 const db = mongoose.connection;
 
